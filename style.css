@@ -153,11 +153,12 @@ input[type="text"] {
 /* //////////////////////////////note:: Header/////////////////////////////////// */
 
 .center-main-pic {
-	font-family: "Caros Light", sans-serif !important; /* Apply the custom font to specific elements */
-	width: 100%;
-	height: auto;
-	display: block;
-	position: relative;
+    width: calc(100% - 44px); /* Adjust width to account for the margins */
+    height: auto;
+    display: block;
+    position: relative;
+    margin-left: 19px !important;
+    margin-right: 18px !important;
 }
 
 .text-main-pic {

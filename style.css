@@ -1,9 +1,15 @@
 /* //////////////////////////////note:: navbar /////////////////////////////////// */
+a{
+	text-decoration: none;
+	color: black;
+}
+
 .top-right-corner-level-1 {
     z-index: 2; /* Ensure it stays above other content */
     position: fixed;
     display: flex;
     justify-content: flex-end;
+    font-family: 'Caros Light', sans-serif;
     align-items: center;
     width: 100%;
     top: 0;
@@ -80,6 +86,7 @@
     background-color: white;
     border: 1px solid #9d9d9d;
     border-radius: 80px;
+    font-family: 'Caros Light', sans-serif;
     padding: 10px;
 }
 
@@ -102,6 +109,7 @@
     font-size: 14px;
     cursor: pointer;
     border-radius: 25px;
+    font-family: 'Caros Light', sans-serif;
 }
 
 .chkout-button:hover {
@@ -113,6 +121,7 @@
     position: fixed;
     z-index: 1;
     /* top: calc(10% + 2px);  */
+    font-family: 'Caros Light', sans-serif;
     top: 10%;
     width: 98%;
     box-sizing: border-box;
@@ -124,6 +133,7 @@
 }
 
 .navbar a {
+    font-family: 'Caros Light', sans-serif;
     color: white;
     text-decoration: none;
     padding: 10px 15px;
@@ -173,7 +183,8 @@
     padding: 10px;
     width: 50%;
     max-width: 200px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Caros Light', sans-serif !important;
+    color: black !important;
     font-size: 12px;
     margin-top: 25px;
     cursor: pointer;
@@ -195,7 +206,7 @@
 }
 
 .text-main-pic {
-    font-family: 'Caros Light', sans-serif !important; /* Apply the custom font to specific elements */
+    font-family: 'Caros Light', sans-serif !important;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
@@ -211,7 +222,7 @@
 
 .outer-container {
     position: relative;
-    font-family: 'Caros Light', sans-serif !important; /* Apply the custom font to specific elements */
+    font-family: 'Caros Light', sans-serif !important;
 }
 
 .outer-new {
@@ -227,8 +238,10 @@
 
 .image-container {
     display: flex;
-    margin-left: 20px;
-    margin-right: 22px;
+    width: 100%;
+    width: calc(100% - 39px);
+    margin-left: 15px;
+    /* margin-right: 24px; */
 }
 .image-container a {
     position: relative;
@@ -255,21 +268,19 @@
 
 .image-link-1 {
     position: absolute;
-    bottom: 45px; /* Adjust vertical position */
-    left: 15px; /* Adjust horizontal position */
-    color: white; /* Text color */
+    bottom: 45px;
+    left: 15px;
+    color: white;
     text-decoration: none;
-    font-size: 14px; /* Adjust font size */
-    /* font-family: 'Poppins', sans-serif !important; */
+    font-size: 14px;
 }
 .image-link-2 {
     position: absolute;
-    bottom: 20px; /* Adjust vertical position */
-    left: 15px; /* Adjust horizontal position */
-    color: white; /* Text color */
+    bottom: 20px;
+    left: 15px;
+    color: white;
     text-decoration: underline;
-    font-size: 14px; /* Adjust font size */
-    /* font-family: 'Poppins', sans-serif !important; */
+    font-size: 14px;
 }
 
 /* //////////////////////////////note:: card with text/////////////////////////////////// */
@@ -284,23 +295,20 @@
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.031);
     color: white;
-    padding: 15px; /* Adjust padding as needed */
-    box-sizing: border-box; /* Ensure padding is included in the width/height */
+    padding: 15px;
+    box-sizing: border-box;
 }
 .text-overlap:first-child {
-    /* Target the first span */
-    /* padding: 10px 0;Adjust padding as needed */
     padding-left: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
-    line-height: 0.5; /* Adjust line-height for spacing */
-    margin-top: -15px; /* Move "DRESS CODE..." slightly upwards */
+    line-height: 0.5;
+    margin-top: -15px;
     font-weight: 600;
 }
 
 .text-overlap:nth-child(2) {
-    /* Target the second span */
-    margin-top: -10px; /* Adjust margin-top for desired spacing */
+    margin-top: -10px;
     padding-left: 40px;
     padding-top: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -310,11 +318,10 @@
 }
 
 #card-outer-container {
+    width: calc(100% - 43px);
     position: relative;
     display: inline-block;
-    /* margin: 2px 15px 10px; */
-    margin-left: 1.5%;
-    margin-right: 2%;
+    margin-left: 15px;
 }
 
 #img {
@@ -365,21 +372,20 @@
 }
 
 #scroll-container {
-    display: flex; /* Ensure the container expands to fit all images */
-    width: 2200px; /* Set the width of the container */
-    /* background-color: black; */
+    display: flex;
+    width: 2200px;
     margin-left: 15px;
     overflow: hidden;
 }
 
 .slider-image {
-    width: 150px; /* Set the width of each image */
-    height: 100px; /* Set the height of each image */
-    padding: 10px; /* Add padding between images */
+    width: 150px;
+    height: 100px;
+    padding: 10px;
 }
 
 #scroll-text {
-    animation: my-animation 30s linear infinite; /* Adjust the animation duration to cover the width of all images */
+    animation: my-animation 30s linear infinite;
 }
 
 @keyframes my-animation {
@@ -387,7 +393,7 @@
         transform: translateX(0%);
     }
     100% {
-        transform: translateX(-1100px); /* Adjust translateX value to cover the width of all images */
+        transform: translateX(-1100px);
     }
 }
 
@@ -422,8 +428,8 @@
     position: relative; /* Set the container to relative positioning */
     display: flex;
     background-color: black;
-    margin-left: 20px;
-    margin-right: 25px;
+    width: calc(100% - 43px);
+    margin-left: 15px;
 }
 
 .container img {
@@ -432,12 +438,12 @@
 }
 
 .text-over-pic {
-    position: absolute; /* Set the text to absolute positioning */
-    top: -5px; /* Adjust top position as needed */
-    left: 57%; /* Adjust left position as needed */
-    color: white; /* Set text color */
-    font-size: 24px; /* Set text size */
-    /* font-family: Franklin Gothic Medium; */
+    position: absolute;
+    top: -5px;
+    left: 57%;
+    font-family: 'Caros Light', sans-serif !important;
+    color: white;
+    font-size: 24px;
     line-height: 1.6;
 }
 .text-over-pic p {
@@ -459,7 +465,8 @@
 
 .last-section-img {
     display: flex;
-    overflow-x: auto; /* Add horizontal scroll if images overflow */
+    overflow-x: auto;
+    width: calc(100% - 10px);
 }
 
 .last-section-img a {
@@ -469,7 +476,7 @@
 }
 
 .last-section-img img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -477,7 +484,7 @@
     display: block;
     margin-top: 12px; /* Adjust margin-top as needed */
     text-align: left;
-    font-family: 'Caros Light', sans-serif; /* Apply the custom font to specific elements */
+    font-family: 'Caros Light', sans-serif !important;
     /* margin-left: 0; */
 }
 @font-face {
@@ -490,19 +497,19 @@
         url('https://db.onlinewebfonts.com/t/9180dec2cdd1711edd6b8d86954aae05.svg#Caros Light') format('svg');
 }
 p {
-    font-family: 'Caros Light', sans-serif; /* Apply the custom font to specific elements */
+    font-family: 'Caros Light', sans-serif;
 }
 h1 {
-    font-family: 'Caros Light', sans-serif; /* Apply the custom font to specific elements */
+    font-family: 'Caros Light', sans-serif;
 }
 h2 {
-    font-family: 'Caros Light', sans-serif; /* Apply the custom font to specific elements */
+    font-family: 'Caros Light', sans-serif;
 }
 span {
-    font-family: 'Caros Light', sans-serif; /* Apply the custom font to specific elements */
+    font-family: 'Caros Light', sans-serif;
 }
 a {
-    font-family: 'Caros Light', sans-serif; /* Apply the custom font to specific elements */
+    font-family: 'Caros Light', sans-serif;
 }
 /* //////////////////////////////note:: two lines after images/////////////////////////////////// */
 .two-lines-area {
@@ -678,20 +685,20 @@ li {
     margin-bottom: -5px;
     margin-top: -10px;
     font-size: 13px;
-    font-family: 'Caros Light', sans-serif; /* Apply the custom font to specific elements */
+    font-family: 'Caros Light', sans-serif;
 }
 .help-area {
     /* background-color: rgb(140, 140, 249); */
     height: auto;
     text-align: left;
     margin-left: 1%;
-    font-family: 'Caros Light', sans-serif; /* Apply the custom font to specific elements */
+    font-family: 'Caros Light', sans-serif;
 }
 .help-area li {
     list-style: none;
     margin-left: 1%;
     line-height: 30px;
-    font-family: 'Caros Light', sans-serif; /* Apply the custom font to specific elements */
+    font-family: 'Caros Light', sans-serif;
 }
 .help-area li:hover {
     text-decoration: underline;
@@ -706,7 +713,7 @@ li {
     list-style: none;
     margin-left: 2%;
     line-height: 30px;
-    font-family: 'Caros Light', sans-serif; /* Apply the custom font to specific elements */
+    font-family: 'Caros Light', sans-serif;
 }
 
 .shopping-with-us-area li:hover {
@@ -721,7 +728,7 @@ li {
     list-style: none;
     margin-left: 12%;
     line-height: 30px;
-    font-family: 'Caros Light', sans-serif; /* Apply the custom font to specific elements */
+    font-family: 'Caros Light', sans-serif;
 }
 .departments-area li:hover {
     text-decoration: underline;
@@ -730,13 +737,13 @@ li {
     /* background-color: rgb(255, 205, 113); */
     height: auto;
     margin-right: 7%;
-    font-family: 'Caros Light', sans-serif; /* Apply the custom font to specific elements */
+    font-family: 'Caros Light', sans-serif;
 }
 
 .more-from-next-area li {
     list-style: none;
     line-height: 30px;
-    font-family: 'Caros Light', sans-serif; /* Apply the custom font to specific elements */
+    font-family: 'Caros Light', sans-serif;
 }
 .more-from-next-area li:hover {
     text-decoration: underline;
@@ -746,6 +753,6 @@ li {
 .rights-container {
     /* background-color: rgb(142, 135, 135); */
     text-align: center;
-    font-family: 'Caros Light', sans-serif; /* Apply the custom font to specific elements */
+    font-family: 'Caros Light', sans-serif;
 }
 /* //////////////////////////////note:: null/////////////////////////////////// */

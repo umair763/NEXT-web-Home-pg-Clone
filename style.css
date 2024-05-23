@@ -26,8 +26,7 @@
     font-family: 'Caros Light', sans-serif;
 }
 
-/* Ensure links are responsive and aligned properly */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .top-right-corner-level-1 {
         flex-direction: column;
         align-items: flex-start;
@@ -35,13 +34,13 @@
     }
 
     .separator {
-        display: none; /* Hide separator on small screens */
+        display: none; 
     }
 
     .navbar-link {
         margin-bottom: 5px;
     }
-}
+} */
 
 /* ///////////////////////// */
 .level-2 {
@@ -50,7 +49,7 @@
     align-items: center;
     position: fixed;
     background-color: white;
-    width: 98%;
+    width: 100%;
     padding: 10px 20px; /* Adjust padding as needed */
     box-sizing: border-box;
 }
@@ -113,13 +112,15 @@
 .navbar {
     position: fixed;
     z-index: 1;
-    top: 12.7%;
-    width: 100%;
-    margin-left: -8px;
+    /* top: calc(10% + 2px);  */
+    top: 10%;
+    width: 98%;
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     background-color: #333;
+    padding: 2px;
 }
 
 .navbar a {
@@ -127,13 +128,52 @@
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 5px;
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     font-weight: 700;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .navbar a:hover {
     background-color: #555;
 }
+
+/* @media (max-width: 1400px) {
+    .navbar a {
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .navbar a {
+        padding: 6px 10px;
+    }
+} */
+
+/* @media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        width: 100%;
+        padding: 8px 10px;
+        margin: 2px 0;
+    }
+} */
+
+/* @media screen and (min-width: 280px) and (max-width: 400px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        width: 100%;
+        padding: 6px 8px;
+        margin: 1px 0;
+    }
+} */
 
 /* //////////////////////////////note:: text area after nav/////////////////////////////////// */
 .text-center {

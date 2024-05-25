@@ -32,22 +32,6 @@ a{
     font-family: 'Caros Light', sans-serif;
 }
 
-/* @media (max-width: 600px) {
-    .top-right-corner-level-1 {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-    }
-
-    .separator {
-        display: none; 
-    }
-
-    .navbar-link {
-        margin-bottom: 5px;
-    }
-} */
-
 /* ///////////////////////// */
 .level-2 {
     z-index: 1;

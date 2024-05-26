@@ -1,7 +1,9 @@
 /* //////////////////////////////note:: navbar /////////////////////////////////// */
-body {
+body, html {
     margin: 0;
     padding: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 a {
@@ -9,8 +11,17 @@ a {
     color: black;
 }
 
+h1,
+h2,
+p,
+span,
+a {
+    font-family: 'Caros Light', sans-serif;
+}
+
+/* Navbar adjustments for responsiveness */
 .top-right-corner-level-1 {
-    z-index: 2; /* Ensure it stays above other content */
+    z-index: 2;
     position: fixed;
     display: flex;
     justify-content: flex-end;
@@ -18,10 +29,11 @@ a {
     align-items: center;
     width: 100%;
     top: 0;
-    padding: 5px 45px 3px 10px;
+    padding: 5px 3%;
     box-sizing: border-box;
     background-color: rgb(248, 248, 248);
 }
+
 
 .separator {
     margin: 0 10px;
@@ -30,61 +42,59 @@ a {
 }
 
 .navbar-link {
-    text-decoration: none;
-    color: rgb(46, 43, 43);
     font-weight: 600;
     font-size: 13px;
-    font-family: 'Caros Light', sans-serif;
 }
 
 /* ///////////////////////// */
+/* Level 2 navbar */
 .level-2 {
     z-index: 1;
+    margin-top: 15px;
     display: flex;
     align-items: center;
     position: fixed;
     background-color: white;
     width: 100%;
-    padding: 10px 20px; /* Adjust padding as needed */
+    padding: 10px 3%;
     box-sizing: border-box;
 }
 
 .navbar-title {
     margin: 0;
-    font-family: Verdana, sans-serif;
     transform: scaleX(1.3);
     font-weight: 550;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
 }
 
 .navbar-search {
     flex-grow: 1;
     display: flex;
-    justify-content: center;
+    margin-left: 20px;
+    /* justify-content: center; */
 }
 
 .navbar-search input[type='text'] {
     width: 100%;
-    max-width: 500px; /* Adjust max-width as needed */
+    max-width: 450px;
     box-sizing: border-box;
     font-size: 14px;
+    padding: 10px;
+    border: 1px solid #9d9d9d;
+    border-radius: 80px;
     background-image: url('search icon.png');
     background-size: 22px 22px;
     background-repeat: no-repeat;
     background-position: 95%;
     background-color: white;
-    border: 1px solid #9d9d9d;
-    border-radius: 80px;
-    font-family: 'Caros Light', sans-serif;
-    padding: 10px;
 }
 
 .img-container {
     display: flex;
     align-items: center;
-    margin-left: auto;
-    gap: 10px; /* Adjust gap between items */
+    gap: 10px;
 }
+
 
 .img-container img {
     margin-top: 0;
@@ -99,7 +109,9 @@ a {
     cursor: pointer;
     border-radius: 25px;
     font-family: 'Caros Light', sans-serif;
+    flex-shrink: 0;
 }
+
 
 .chkout-button:hover {
     background-color: #7dd4bd;
@@ -109,12 +121,9 @@ a {
 .navbar {
     position: fixed;
     z-index: 1;
-    /* top: calc(10% + 2px);  */
-    font-family: 'Caros Light', sans-serif;
     top: 0;
-    margin-top: 60px;
-    width: 98%;
-    box-sizing: border-box;
+    margin-top: 80px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -123,14 +132,12 @@ a {
 }
 
 .navbar a {
-    font-family: 'Caros Light', sans-serif;
     color: white;
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 5px;
     font-weight: 700;
     text-align: center;
-    box-sizing: border-box;
 }
 
 .navbar a:hover {
@@ -173,8 +180,6 @@ a {
     padding: 10px;
     width: 50%;
     max-width: 200px;
-    font-family: 'Caros Light', sans-serif !important;
-    color: black !important;
     font-size: 12px;
     margin-top: 25px;
     cursor: pointer;
@@ -196,7 +201,7 @@ a {
 }
 
 .text-main-pic {
-    font-family: 'Caros Light', sans-serif !important;
+    font-family: 'Caros Light', sans-serif;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
@@ -209,7 +214,6 @@ a {
     padding: 0 10px;
     box-sizing: border-box;
 }
-
 .outer-container {
     position: relative;
     font-family: 'Caros Light', sans-serif !important;
@@ -486,21 +490,7 @@ a {
         url('https://db.onlinewebfonts.com/t/9180dec2cdd1711edd6b8d86954aae05.ttf') format('truetype'),
         url('https://db.onlinewebfonts.com/t/9180dec2cdd1711edd6b8d86954aae05.svg#Caros Light') format('svg');
 }
-p {
-    font-family: 'Caros Light', sans-serif;
-}
-h1 {
-    font-family: 'Caros Light', sans-serif;
-}
-h2 {
-    font-family: 'Caros Light', sans-serif;
-}
-span {
-    font-family: 'Caros Light', sans-serif;
-}
-a {
-    font-family: 'Caros Light', sans-serif;
-}
+
 /* //////////////////////////////note:: two lines after images/////////////////////////////////// */
 .two-lines-area {
     /* background-color: rgb(169, 167, 167); */

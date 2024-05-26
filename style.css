@@ -1,7 +1,12 @@
 /* //////////////////////////////note:: navbar /////////////////////////////////// */
-a{
-	text-decoration: none;
-	color: black;
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .top-right-corner-level-1 {
@@ -106,7 +111,8 @@ a{
     z-index: 1;
     /* top: calc(10% + 2px);  */
     font-family: 'Caros Light', sans-serif;
-    top: 10%;
+    top: 0;
+    margin-top: 60px;
     width: 98%;
     box-sizing: border-box;
     display: flex;

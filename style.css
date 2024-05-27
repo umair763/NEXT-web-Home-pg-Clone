@@ -1,7 +1,8 @@
 /* //////////////////////////////note:: navbar /////////////////////////////////// */
 /* note:: problem is in the navbar and the 12 images in circle */
 /* ///////////////////////////////////////////////////////////// */
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -12,7 +13,82 @@ a {
     text-decoration: none;
     color: black;
 }
+/* ////////////note:: navbar restrucuture///////////////////// */
+.topmostnav {
+    background-color: rgb(248, 248, 248);
+    position: fixed;
+    width: 100%;
+    justify-content: flex-end;
+    text-align: end;
+    z-index: 999;
+    padding-right: 30px; /* Adjust this value to move the text left */
+    height: 30px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box; /* Ensure padding doesn't affect overall width */
+}
+.secondlevelnav {
+    background-color: grey;
+    margin-top: 22px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+    padding: 10px 30px; /* Adjust the padding as needed */
+    box-sizing: border-box; /* Ensure padding doesn't affect overall width */
+}
+.next {
+    transform: scaleX(1.3);
+    font-weight: 550;
+}
+.secondlevelnav h3 {
+    margin: 0;
+    margin-right: 20px; /* Adjust space between text and search bar */
+    padding: 5px; /* Optional padding for the text */
+}
 
+form {
+    position: relative;
+    display: inline-block;
+    flex-grow: 1; /* Allow the search bar to take up available space */
+}
+
+input[type='search'] {
+    width: 100%;
+    max-width: 400px;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #9d9d9d;
+    border-radius: 80px;
+    background-color: white;
+    outline: none; /* Remove default focus outline */
+}
+
+.search-icon {
+    position: relative;
+    right: 4%; /* Adjust as needed to fit within the padding */
+    top: 80%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevent the icon from blocking clicks to the input */
+}
+
+.search-icon img {
+    width: 16px; /* Adjust the size of the icon as needed */
+    height: 16px;
+}
+
+/* /////////////////////////// */
+
+/* /////////////////////////// */
+
+/* /////////////////////////// */
+
+/* /////////////////////////// */
+
+/* /////////////////////////// */
+
+/* /////////////////////////// */
 h1,
 h2,
 p,
@@ -21,46 +97,7 @@ a {
     font-family: 'Caros Light', sans-serif;
 }
 
-/* Navbar adjustments for responsiveness */
-.top-right-corner-level-1 {
-    z-index: 2;
-    position: fixed;
-    display: flex;
-    justify-content: flex-end;
-    font-family: 'Caros Light', sans-serif;
-    align-items: center;
-    width: 100%;
-    top: 0;
-    padding: 5px 3%;
-    box-sizing: border-box;
-    background-color: rgb(248, 248, 248);
-}
-
-
-.separator {
-    margin: 0 10px;
-    font-size: 13px;
-    font-weight: 500;
-}
-
-.navbar-link {
-    font-weight: 600;
-    font-size: 13px;
-}
-
 /* ///////////////////////// */
-/* Level 2 navbar */
-.level-2 {
-    z-index: 1;
-    margin-top: 15px;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    background-color: white;
-    width: 100%;
-    padding: 10px 3%;
-    box-sizing: border-box;
-}
 
 .navbar-title {
     margin: 0;
@@ -76,27 +113,11 @@ a {
     /* justify-content: center; */
 }
 
-.navbar-search input[type='text'] {
-    width: 100%;
-    max-width: 450px;
-    box-sizing: border-box;
-    font-size: 14px;
-    padding: 10px;
-    border: 1px solid #9d9d9d;
-    border-radius: 80px;
-    background-image: url('search icon.png');
-    background-size: 22px 22px;
-    background-repeat: no-repeat;
-    background-position: 95%;
-    background-color: white;
-}
-
 .img-container {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-
 
 .img-container img {
     margin-top: 0;
@@ -113,7 +134,6 @@ a {
     font-family: 'Caros Light', sans-serif;
     flex-shrink: 0;
 }
-
 
 .chkout-button:hover {
     background-color: #7dd4bd;

@@ -2,8 +2,6 @@
 
 Welcome to the Next UNOfficial Site Clone repository!
 
-![Next UNOfficial Site](images/website screenshot.png)
-
 ## Overview
 
 This repository hosts a meticulous clone of the Next UNOfficial website, meticulously crafted to replicate the design, functionality, and user experience of the original platform. By meticulously recreating the site's layout, features, and visual elements, this project aims to serve as an educational resource and a testament to the craftsmanship of web development.

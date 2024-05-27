@@ -2,7 +2,7 @@
 
 Welcome to the Next UNOfficial Site Clone repository!
 
-![Next UNOfficial Site](images/next_clone_preview.png)
+![Next UNOfficial Site](images/website screenshot.png)
 
 ## Overview
 

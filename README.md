@@ -34,7 +34,6 @@ Special thanks to the team behind the official Next website for their inspiring 
 
 ## Get Started
 
-Ready to explore the Next UNOfficial Site Clone? Visit [Demo Link](https://your-demo-link.com) to see the clone in action and experience the magic of Next's online shopping platform.
 
-For more information or inquiries, please contact [Your Name](mailto:your-email@example.com).
+For more information or inquiries, please contact [Muhammad Umair](mailto:muhammadumairkhan945@gamil.com).
 

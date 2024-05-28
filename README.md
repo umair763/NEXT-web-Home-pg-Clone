@@ -2,8 +2,6 @@
 
 Welcome to the Next UNOfficial Site Clone repository!
 
-![Next UNOfficial Site](images/next_clone_preview.png)
-
 ## Overview
 
 This repository hosts a meticulous clone of the Next UNOfficial website, meticulously crafted to replicate the design, functionality, and user experience of the original platform. By meticulously recreating the site's layout, features, and visual elements, this project aims to serve as an educational resource and a testament to the craftsmanship of web development.
@@ -34,7 +32,6 @@ Special thanks to the team behind the official Next website for their inspiring 
 
 ## Get Started
 
-Ready to explore the Next UNOfficial Site Clone? Visit [Demo Link](https://your-demo-link.com) to see the clone in action and experience the magic of Next's online shopping platform.
 
-For more information or inquiries, please contact [Your Name](mailto:your-email@example.com).
+For more information or inquiries, please contact [Muhammad Umair](mailto:muhammadumairkhan945@gamil.com).
 

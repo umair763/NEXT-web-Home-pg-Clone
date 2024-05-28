@@ -1,5 +1,4 @@
 /* //////////////////////////////note:: navbar /////////////////////////////////// */
-/* note:: problem is in the navbar and the 12 images in circle */
 /* ///////////////////////////////////////////////////////////// */
 body,
 html {
@@ -13,6 +12,14 @@ a {
     text-decoration: none;
     color: black;
 }
+h1,
+h2,
+p,
+span,
+a {
+    font-family: 'Caros Light', sans-serif;
+}
+
 /* ////////////note:: navbar restrucuture///////////////////// */
 .topmostnav {
     background-color: rgb(248, 248, 248);
@@ -89,16 +96,6 @@ input[type='search'] {
 
 /* /////////////////////////// */
 
-h1,
-h2,
-p,
-span,
-a {
-    font-family: 'Caros Light', sans-serif;
-}
-
-/* ///////////////////////// */
-
 .img-container {
     display: flex;
     align-items: center;
@@ -157,7 +154,7 @@ a {
 /* //////////////////////////////note:: text area after nav/////////////////////////////////// */
 .text-center {
     text-align: center;
-    padding-top: 18px;
+    padding-top: 28px;
     font-size: 20px;
 }
 /* //////////////////////////////note:: mother's day card/////////////////////////////////// */
@@ -366,83 +363,7 @@ a {
 .caption {
     margin-top: 5px;
     font-size: 12px;
-}
-
-@media (min-width: 328px) {
-    .image-containerr {
-        width: 98%;
-        gap: 2px !important;
-    }
-    .circle-img {
-        width: 50px;
-        height: 50px;
-    }
-    .caption {
-        font-size: 10px;
-    }
-}
-
-@media (min-width: 450px) {
-    .image-containerr {
-        width: 98%;
-    }
-    .circle-img {
-        width: 60px;
-        height: 70px;
-    }
-    .caption {
-        font-size: 11px;
-    }
-}
-
-@media (min-width: 600px) {
-    .image-containerr {
-        width: 98%;
-        margin-bottom: 12px;
-    }
-    .circle-img {
-        width: 60px;
-        height: 75px;
-    }
-    .caption {
-        font-size: 12px;
-    }
-}
-
-@media (min-width: 768px) {
-    .image-containerr {
-        width: 98%;
-        margin-bottom: 12px;
-    }
-    .circle-img {
-        width: 60px;
-        height: 75px;
-    }
-    .caption {
-        font-size: 12px;
-    }
-}
-
-@media (min-width: 992px) {
-    .circle-img {
-        width: 70px;
-        height: 80px;
-    }
-    .caption {
-        font-size: 13px;
-    }
-}
-
-@media (min-width: 993px) and (max-width: 1400px) {
-    .image-containerr {
-        width: 97%;
-        justify-content: space-around;
-    }
-    .circle-img {
-        /* width: calc((100% / 9) - 20px);  */
-        width: 97px;
-        height: auto;
-    }
+    font-family: 'Caros Light', sans-serif;
 }
 
 /* //////////////////////////////note:: scroll live/////////////////////////////////// */
@@ -821,4 +742,213 @@ li {
     text-align: center;
     font-family: 'Caros Light', sans-serif;
 }
-/* //////////////////////////////note:: null/////////////////////////////////// */
+
+/* ////////////////note:: Nav responsive media query//////////////// */
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1400px) {
+    .secondlevelnav {
+        padding: 10px 15px;
+    }
+    .chkout-button {
+        padding: 8px 18px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .next {
+        font-size: 1.2em;
+        margin-right: 8px;
+    }
+    input[type='search'] {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .secondlevelnav {
+        padding: 10px 10px;
+    }
+    .next {
+        font-size: 1em;
+        margin-right: 5px;
+    }
+    input[type='search'] {
+        max-width: 180px;
+    }
+    .chkout-button {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+    .img-container {
+        gap: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .next {
+        font-size: 0.9em;
+        margin-right: 5px;
+    }
+    input[type='search'] {
+        max-width: 150px;
+    }
+    .chkout-button {
+        padding: 7px 12px;
+        font-size: 11px;
+    }
+}
+@media (max-width: 576px) {
+    .secondlevelnav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 5px;
+    }
+    .next {
+        margin-bottom: 10px;
+        margin-right: 0;
+        font-size: 0.8em;
+    }
+    form {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    input[type='search'] {
+        max-width: 100%;
+        padding: 8px;
+    }
+    .img-container {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .chkout-button {
+        padding: 6px 10px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .secondlevelnav {
+        padding: 10px 5px;
+    }
+    .next {
+        font-size: 0.7em;
+        margin-bottom: 5px;
+    }
+    input[type='search'] {
+        font-size: 12px;
+        padding: 6px;
+    }
+    .search-icon img {
+        width: 14px;
+        height: 14px;
+    }
+    .chkout-button {
+        padding: 5px 8px;
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 320px) {
+    .next {
+        font-size: 0.6em;
+        margin-bottom: 5px;
+    }
+    input[type='search'] {
+        font-size: 11px;
+        padding: 5px;
+    }
+    .chkout-button {
+        padding: 4px 6px;
+        font-size: 8px;
+    }
+}
+
+/* ////////////////note:: 9-images-responsive media query//////////////// */
+@media (min-width: 328px) {
+    .image-containerr {
+        width: 98%;
+        gap: 2px !important;
+    }
+    .circle-img {
+        width: 50px;
+        height: 50px;
+    }
+    .caption {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 450px) {
+    .image-containerr {
+        width: 98%;
+    }
+    .circle-img {
+        width: 60px;
+        height: 70px;
+    }
+    .caption {
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 600px) {
+    .image-containerr {
+        width: 98%;
+        margin-bottom: 12px;
+    }
+    .circle-img {
+        width: 60px;
+        height: 75px;
+    }
+    .caption {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .image-containerr {
+        width: 98%;
+        margin-bottom: 12px;
+    }
+    .circle-img {
+        width: 60px;
+        height: 75px;
+    }
+    .caption {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 992px) {
+    .circle-img {
+        width: 70px;
+        height: 80px;
+    }
+    .caption {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1400px) {
+    .image-containerr {
+        width: 97%;
+        justify-content: space-around;
+    }
+    .circle-img {
+        /* width: calc((100% / 9) - 20px);  */
+        width: 97px;
+        height: auto;
+    }
+}
+/* ////////////////note:: 9-images-responsive media query//////////////// */
+
+/* ////////////////note:: 9-images-responsive media query//////////////// */
+
+/* ////////////////note:: 9-images-responsive media query//////////////// */
+
+/* ////////////////note:: 9-images-responsive media query//////////////// */
+
+/* ////////////////note:: 9-images-responsive media query//////////////// */

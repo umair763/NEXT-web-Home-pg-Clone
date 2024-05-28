@@ -334,39 +334,115 @@ a {
 }
 
 /* //////////////////////////////note:: 9 pic in a row challenge/////////////////////////////////// */
-.img-container-for-9img {
-    width: 100%;
+
+.image-containerr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     padding: 10px;
-    box-sizing: border-box;
+    width: 98%;
+    max-width: 1400px;
     margin-left: 5px;
 }
 
-.flex-box-for-9img {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.image-wrapper {
+.image-item {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
     text-align: center;
 }
 
-.circular--square {
-    width: 905x; /* Adjust image size */
-    height: 95px; /* Adjust image size */
+.circle-img {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
+    object-fit: cover;
+    flex: 1 1 auto;
 }
 
 .caption {
-    margin-top: 5px; /* Adjust spacing between image and caption */
-    font-size: 12px; /* Adjust font size */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 500;
-    text-align: center;
-    word-wrap: break-word;
-    width: 88%;
-    color: rgb(82, 80, 80);
-    /* background-color: rgba(0, 0, 0, 0.502); */
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+@media (min-width: 328px) {
+    .image-containerr {
+        width: 98%;
+        gap: 2px !important;
+    }
+    .circle-img {
+        width: 50px;
+        height: 50px;
+    }
+    .caption {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 450px) {
+    .image-containerr {
+        width: 98%;
+    }
+    .circle-img {
+        width: 60px;
+        height: 70px;
+    }
+    .caption {
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 600px) {
+    .image-containerr {
+        width: 98%;
+        margin-bottom: 12px;
+    }
+    .circle-img {
+        width: 60px;
+        height: 75px;
+    }
+    .caption {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .image-containerr {
+        width: 98%;
+        margin-bottom: 12px;
+    }
+    .circle-img {
+        width: 60px;
+        height: 75px;
+    }
+    .caption {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 992px) {
+    .circle-img {
+        width: 70px;
+        height: 80px;
+    }
+    .caption {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1400px) {
+    .image-containerr {
+        width: 97%;
+        justify-content: space-around;
+    }
+    .circle-img {
+        /* width: calc((100% / 9) - 20px);  */
+        width: 97px;
+        height: auto;
+    }
 }
 
 /* //////////////////////////////note:: scroll live/////////////////////////////////// */
